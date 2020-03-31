@@ -40,17 +40,33 @@ class CSSInspectorTool
     end
   end
 
-  def space_before_brace_error(f_string,f_index)
+  def space_before_brace_error?(f_string,f_index)
     if f_string.match?(/\w+{$/)
       puts 'ⓧ NoSpaceBeforeBrace'.red + ': css(no space before opening brace "{" ) on'.cyan + " line:[:#{f_index}:]".yellow
     end
   end
 
-  def missing_ending_semicolon_error(f_string,f_index)
+  def missing_ending_semicolon_error?(f_string,f_index)
+    if  f_string.match?(/({|})/)  || f_string.match?(/(;.*)$/)
+      return
+    else
+      puts 'ⓧ MissingEndingSemiColonError'.red + ': css(ending semicolon ";" expected) on'.cyan + " line:[:#{f_index}:]".yellow
+    end
+  end
+
+  def missing_ending_semicolon_error?(f_string,f_index)
     if f_string.match?(/(;.*)$/) || f_string.match?(/({|})/) || f_string.match?(/^\n$/)
       return
     else
       puts 'ⓧ MissingEndingSemiColonError'.red + ': css(ending semicolon ";" expected) on'.cyan + " line:[:#{f_index}:]".yellow
+    end
+  end
+
+  def space_before_semicolon_error?(f_string,f_index)
+    if f_string.match?(/( ;)+/)
+      puts 'ⓧ SpaceBeforeSemiColonError'.red + ': css(space before colon, no space expected) on'.cyan + " line:[:#{f_index}:]".yellow
+    else
+      return
     end
   end
 
@@ -60,9 +76,9 @@ class CSSInspectorTool
       before_colon_space_error?(f_string,f_index + 1)
       white_trailing_space_error?(f_string,f_index + 1)
       indentation_error?(f_string,f_index + 1)
-      space_before_brace_error(f_string,f_index + 1)
-      missing_ending_semicolon_error(f_string,f_index + 1)
-      
+      space_before_brace_error?(f_string,f_index + 1)
+      missing_ending_semicolon_error?(f_string,f_index + 1)  
+      space_before_semicolon_error?(f_string,f_index + 1)
     end
   end
 
