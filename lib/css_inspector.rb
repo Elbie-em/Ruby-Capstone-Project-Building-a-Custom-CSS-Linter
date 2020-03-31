@@ -15,11 +15,18 @@ class CSSInspectorTool
       return
     end
   end
-  
+  def before_colon_space_error?(f_string,f_index)
+    if f_string.match?(/( :)/)
+      puts ' SpaceBeforeColonError'.red + ': space before colon " :" at' + " line:[:#{f_index}:]".yellow
+    else
+      return
+    end
+  end
 
   def inspect_file
     @file_details_array.each_with_index do |f_string,f_index|
       after_colon_space_error?(f_string,f_index + 1)
+      before_colon_space_error?(f_string,f_index + 1)
     end
   end
 
