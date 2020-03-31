@@ -40,6 +40,11 @@ class CSSInspectorTool
     end
   end
 
+  def space_before_brace_error(f_string,f_index)
+    if f_string.match?(/\w+{$/)
+      puts ' NoSpaceBeforeBrace'.red + ': no space before opening brace "{" on ' + "line:[:#{f_index}:]".yellow
+    end
+  end
 
   def inspect_file
     @file_details_array.each_with_index do |f_string,f_index|
@@ -47,6 +52,7 @@ class CSSInspectorTool
       before_colon_space_error?(f_string,f_index + 1)
       white_trailing_space_error?(f_string,f_index + 1)
       indentation_error?(f_string,f_index + 1)
+      space_before_brace_error(f_string,f_index + 1)
     end
   end
 
