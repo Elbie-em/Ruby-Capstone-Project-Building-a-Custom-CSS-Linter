@@ -1,5 +1,3 @@
-require 'strscan'
-require 'colorize'
 class CSSInspectorTool
   attr_reader :file_details
 
