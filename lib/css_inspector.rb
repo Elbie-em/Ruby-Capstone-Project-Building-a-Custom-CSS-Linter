@@ -26,7 +26,8 @@ class CSSInspectorTool
       sleep(0.1)
       space_before_semicolon_error?(f_string,f_index + 1)
     end
-  puts "File Check Complete".green
+    puts
+    puts "File Check Complete".green
   end
 
 end

@@ -3,6 +3,7 @@ require './lib/css_inspector.rb'
 
 
 puts "Checking File for errors..."
+puts 
 
 # importing users file for command line interface
 user_file_path = ARGV
