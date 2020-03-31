@@ -32,11 +32,21 @@ class CSSInspectorTool
     end
   end
 
+  def indentation_error?(f_string,f_index)
+    if f_string.match?(/^\w+\s*-.\w*:/) || f_string.match?(/^\w+\s*\w*:/)
+      puts ' IndentationError'.red + ': two spaced indentation required on' + " line:[:#{f_index}:]".yellow
+    else
+      return
+    end
+  end
+
+
   def inspect_file
     @file_details_array.each_with_index do |f_string,f_index|
       after_colon_space_error?(f_string,f_index + 1)
       before_colon_space_error?(f_string,f_index + 1)
       white_trailing_space_error?(f_string,f_index + 1)
+      indentation_error?(f_string,f_index + 1)
     end
   end
 
