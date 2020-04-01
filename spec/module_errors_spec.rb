@@ -32,6 +32,25 @@ RSpec.describe Errors do
     end
   end
 
-  describe
+  describe '#indentation_error?' do
+    context 'returns true with error message if there is no indentation of properties' do
+      f_string = 'font-size: 14px;'
+      it { expect(indentation_error?(f_string, f_index)).to eql(true)}
+    end
+    context 'returns no error message if there is intdentation' do
+      it { expect(indentation_error?(correct_format_string, f_index)).not_to eql(true)}
+    end
+  end
+
+  describe '#indentation_error?' do
+    context 'returns true with error message if there is no indentation of properties' do
+      f_string = 'font-size: 14px;'
+      it { expect(indentation_error?(f_string, f_index)).to eql(true)}
+    end
+    context 'returns no error message if there is intdentation' do
+      it { expect(indentation_error?(correct_format_string, f_index)).not_to eql(true)}
+    end
+  end
+
 
 end
