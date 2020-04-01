@@ -25,12 +25,11 @@
  - Clone the repository to your local machine
  - Go to the bin file directory and locate the linter file
  - In the Shell run ln -s $PWD/checker /usr/local/bin/ or sudo ln -s $PWD/checker /usr/local/bin/
- **NOTE**: If you have issues installing click [here](https://commandercoriander.net/blog/2013/02/16/making-a-ruby-script-executable/) for guidelines
+ - **NOTE**: If you have issues installing click [here](https://commandercoriander.net/blog/2013/02/16/making-a-ruby-script-executable/) for guidelines
 
-- **Running the program
+- **Running the program**
   - After a succesful installation, go into your shell and run linter "filename.css"
   - Ensure your follow the right path of the css file you are trying to scan of errors e.g "./users/user/desktop/files/filename.css"
-## Author ![Hireable](https://img.shields.io/badge/HIREABLE-YES-yellowgreen&?style=for-the-badge)
 
 ## Example
 **File: stylesheet.css**
@@ -41,7 +40,7 @@
 
 ![screenshot](./files/result_screenshot.png)
 
-
+## Author ![Hireable](https://img.shields.io/badge/HIREABLE-YES-yellowgreen&?style=for-the-badge)
 
 👤 **Elbie Moonga**
 
