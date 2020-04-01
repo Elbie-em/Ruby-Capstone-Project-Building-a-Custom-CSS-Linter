@@ -5,11 +5,10 @@ class UserFile
     @user_file_path = file_path
   end
 
-  public
-  def read_file_elements(user_file_path)
+  def read_file_elements(_user_file_path)
     user_file = File.open(@user_file_path)
     user_file_details = user_file.readlines
     user_file.close
-    return user_file_details
+    user_file_details
   end
 end
