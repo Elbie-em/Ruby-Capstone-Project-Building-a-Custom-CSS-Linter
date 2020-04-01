@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require './lib/user_file.rb'
 require './lib/css_inspector.rb'
 
