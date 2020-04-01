@@ -42,10 +42,10 @@ module Errors
 
   def missing_ending_semicolon_error?(f_string, f_index)
     if f_string.match?(/(;.*)$/) || f_string.match?(/({|})/) || f_string.match?(/^\n$/)
-      nil
+      true
     else
       puts 'ⓧ MissingEndingSemiColonError'.red + ': css(ending semicolon ";" expected) on'.cyan + " line:[:#{f_index}:]".yellow
-      true
+      false
     end
   end
 

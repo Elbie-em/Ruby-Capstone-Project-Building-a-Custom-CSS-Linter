@@ -42,13 +42,21 @@ RSpec.describe Errors do
     end
   end
 
-  describe '#indentation_error?' do
-    context 'returns true with error message if there is no indentation of properties' do
-      f_string = 'font-size: 14px;'
-      it { expect(indentation_error?(f_string, f_index)).to eql(true)}
+  describe '#space_before_brace_error?' do
+    context 'returns true with error message if there is no space before brace' do
+      f_string = 'body{'
+      it { expect(space_before_brace_error?(f_string, f_index)).to eql(true)}
     end
-    context 'returns no error message if there is intdentation' do
-      it { expect(indentation_error?(correct_format_string, f_index)).not_to eql(true)}
+    context 'returns no error message if there is a space before brace' do
+      f_string = 'body {'
+      it { expect(space_before_brace_error?(f_string, f_index)).not_to eql(true)}
+    end
+  end
+
+  describe '#missing_ending_semicolon_error?' do
+    context 'returns false with error message if there is no ending semicolon after defining property and value' do
+      f_string = 'font-size: 23px '
+      it { expect(missing_ending_semicolon_error?(f_string, f_index)).not_to eql(true)}
     end
   end
 
