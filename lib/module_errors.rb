@@ -19,10 +19,10 @@ module Errors
 
   def white_trailing_space_error?(f_string, f_index)
     if f_string.match?(/([^\s]\n)$/) || f_string.match?(/^\n$/)
-      nil
+      true
     else
       puts 'ⓧ WhiteTrailingSpaceError'.red + ': css(trailing white space) on'.cyan + " line:[:#{f_index}:]".yellow
-      true
+      false
     end
   end
 

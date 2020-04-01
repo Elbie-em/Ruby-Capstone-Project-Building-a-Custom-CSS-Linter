@@ -26,13 +26,12 @@ RSpec.describe Errors do
   end
 
   describe '#white_trailing_space_error?' do
-    context 'returns true with error message if there is a trailing white space' do
-      f_string = 'font-size: 14px;'
-      it { expect(white_trailing_space_error?(f_string, f_index)).to eql(true)}
-    end
-    context 'returns no error message if there is no trailing white space' do
-      it { expect(white_trailing_space_error?(correct_format_string, f_index)).to eql(nil)}
+    context 'returns false with error message if there is a trailing white space' do
+      f_string = 'body {   '
+      it { expect(white_trailing_space_error?(f_string, f_index)).not_to eql(true)}
     end
   end
+
+  describe
 
 end
