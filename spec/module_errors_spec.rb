@@ -49,7 +49,7 @@ RSpec.describe Errors do
     end
     context 'returns no error message if there is a space before brace' do
       f_string = 'body {'
-      it { expect(space_before_brace_error?(f_string, f_index)).not_to eql(true)}
+      it { expect(space_before_brace_error?(correct_format_string, f_index)).not_to eql(true)}
     end
   end
 
@@ -57,6 +57,17 @@ RSpec.describe Errors do
     context 'returns false with error message if there is no ending semicolon after defining property and value' do
       f_string = 'font-size: 23px '
       it { expect(missing_ending_semicolon_error?(f_string, f_index)).not_to eql(true)}
+    end
+  end
+
+  describe '#space_before_semicolon_error?' do
+    context 'returns true with error message if there is a space before semicolon' do
+      f_string = 'font-size: 40px ;'
+      it { expect(space_before_semicolon_error?(f_string, f_index)).to eql(true)}
+    end
+    context 'returns no error message if there is no space before semicolon' do
+      f_string = 'body {'
+      it { expect(space_before_semicolon_error?(f_string, f_index)).not_to eql(true)}
     end
   end
 
