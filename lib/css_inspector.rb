@@ -3,7 +3,7 @@ require 'colorize'
 
 class CSSInspectorTool
   include Errors
-  attr_reader :file_details
+  attr_reader :file_details_array
 
   def initialize(file_details_arr)
     @file_details_array = file_details_arr
