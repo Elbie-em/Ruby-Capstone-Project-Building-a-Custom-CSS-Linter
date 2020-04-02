@@ -12,4 +12,10 @@ RSpec.describe CSSInspectorTool do
       it {expect(css_inspector.file_details_array).to eql(user_file_details)}
     end
   end
+
+  describe '.inspect_file' do
+    context 'inspect the file to check for errors, returns true if check complete' do
+      it {expect(css_inspector.inspect_file).to eql(true)}
+    end
+  end
 end

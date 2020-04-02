@@ -27,5 +27,6 @@ class CSSInspectorTool
     end
     puts
     puts 'File Check Complete'.green
+    true
   end
 end
