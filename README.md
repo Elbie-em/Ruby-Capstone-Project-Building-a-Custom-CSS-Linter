@@ -1,6 +1,8 @@
 # Custom CSS Linter
  > A Ruby developed linter for beginners that provides feedback about errors that the user might encounter in their css file.
 
+ > [Presentation here](https://www.loom.com/share/b559a42e007c4bbba7e8bab271ce86c5)
+
  ## Objective
  CSS linter is responsible for flagging the following errors
   - *Space before opening brace error in css file*
