@@ -20,4 +20,3 @@ inspector_tool = CSSInspectorTool.new(user_file_details)
 
 # File inspection
 inspector_tool.inspect_file
-
