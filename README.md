@@ -51,7 +51,7 @@
 
 **File: stylesheet.css (Good Code)**
 
-![screenshot](./files/good_code_screenshot.png)
+![screenshot](./files/good_code_screen_shot.png)
 
 ## Author ![Hireable](https://img.shields.io/badge/HIREABLE-YES-yellowgreen&?style=for-the-badge)
 
