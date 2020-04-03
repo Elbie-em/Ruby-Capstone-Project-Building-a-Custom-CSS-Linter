@@ -1,4 +1,5 @@
-require './lib/module_errors.rb'
+require 'spec_helper.rb'
+require'./lib/module_errors.rb'
 
 RSpec.describe Errors do
   include Errors

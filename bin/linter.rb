@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-require './lib/user_file.rb'
-require './lib/css_inspector.rb'
+require_relative './lib/user_file.rb'
+require_relative './lib/css_inspector.rb'
 
 puts 'Checking File for errors...'
 puts

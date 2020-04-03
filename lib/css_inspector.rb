@@ -1,4 +1,4 @@
-require './lib/module_errors.rb'
+require_relative 'module_errors.rb'
 require 'colorize'
 
 class CSSInspectorTool

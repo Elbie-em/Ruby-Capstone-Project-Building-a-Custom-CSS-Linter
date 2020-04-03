@@ -29,6 +29,13 @@
  - In the Shell run ln -s $PWD/checker /usr/local/bin/ or sudo ln -s $PWD/checker /usr/local/bin/
  - **NOTE**: If you have issues installing click [here](https://commandercoriander.net/blog/2013/02/16/making-a-ruby-script-executable/) for guidelines
 
+- **Understanding the files and Content**
+ - linter.rb : Main file responsible for running the application
+ - user_file.rb : Contains a UserFile class that is responsible for reading the contents of CSS file provided by user.
+ - css_inspector : Contains the CSSInspectorTool class that is responsible for inspecting the content of the CSS file provided by the user.
+ - module_errors.rb : Contains the Errors module which consists of several methods responsible for manipulating the file content provided by the user
+
+ 
 - **Running the program**
   - After a succesful installation, go into your shell and run linter "filename.css"
   - Ensure your follow the right path of the css file you are trying to scan of errors e.g "./users/user/desktop/files/filename.css"
@@ -41,6 +48,10 @@
 **Result**
 
 ![screenshot](./files/result_screenshot.png)
+
+**Result**
+
+![screenshot](./files/good_code_screenshot.png)
 
 ## Author ![Hireable](https://img.shields.io/badge/HIREABLE-YES-yellowgreen&?style=for-the-badge)
 

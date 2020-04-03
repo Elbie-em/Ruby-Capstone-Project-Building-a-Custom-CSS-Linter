@@ -1,4 +1,5 @@
-require './lib/css_inspector.rb'
+require 'spec_helper.rb'
+require'./lib/css_inspector.rb'
 require './lib/user_file.rb'
 
 RSpec.describe CSSInspectorTool do
