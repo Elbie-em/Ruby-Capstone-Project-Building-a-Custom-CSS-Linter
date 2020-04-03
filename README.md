@@ -35,13 +35,13 @@
  - css_inspector : Contains the CSSInspectorTool class that is responsible for inspecting the content of the CSS file provided by the user.
  - module_errors.rb : Contains the Errors module which consists of several methods responsible for manipulating the file content provided by the user
 
- 
+
 - **Running the program**
   - After a succesful installation, go into your shell and run linter "filename.css"
   - Ensure your follow the right path of the css file you are trying to scan of errors e.g "./users/user/desktop/files/filename.css"
 
 ## Example
-**File: stylesheet.css**
+**File: stylesheet.css (Bad Code)**
 
 ![screenshot](./files/file_screenshot.png)
 
@@ -49,7 +49,7 @@
 
 ![screenshot](./files/result_screenshot.png)
 
-**Result**
+**File: stylesheet.css (Good Code)**
 
 ![screenshot](./files/good_code_screenshot.png)
 
