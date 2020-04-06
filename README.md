@@ -4,9 +4,9 @@
  > [Presentation here](https://www.loom.com/share/b559a42e007c4bbba7e8bab271ce86c5)
 
  ## Objective
- CSS linter is responsible for flagging the following errors
+ CSS linter is responsible for flagging the following errors:
   - *Space before opening brace error in css file*
-  - *Missing of an ending semi colon when defining a property and its value*
+  - *Missing of an ending semicolon when defining a property and its value*
   - *No space after a colon when defining a properties value*
   - *Indentation errors*
   - *White trailing space errors*
@@ -30,14 +30,14 @@
  - **NOTE**: If you have issues installing click [here](https://commandercoriander.net/blog/2013/02/16/making-a-ruby-script-executable/) for guidelines
 
 - **Understanding the files and Content**
- - linter.rb : Main file responsible for running the application
+ - linter.rb : Main file responsible for running the application.
  - user_file.rb : Contains a UserFile class that is responsible for reading the contents of CSS file provided by user.
  - css_inspector : Contains the CSSInspectorTool class that is responsible for inspecting the content of the CSS file provided by the user.
- - module_errors.rb : Contains the Errors module which consists of several methods responsible for manipulating the file content provided by the user
+ - module_errors.rb : Contains the Errors module which consists of several methods responsible for manipulating the file content provided by the user.
 
 
 - **Running the program**
-  - After a succesful installation, go into your shell and run linter "filename.css"
+  - After a succesful installation, go into your shell and run linter "filename.css".
   - Ensure your follow the right path of the css file you are trying to scan of errors e.g "./users/user/desktop/files/filename.css"
 
 ## Example
@@ -63,13 +63,13 @@
 
 ## 🤝 Contributing
 
-Contributions, issues are welcome!
+Contributions and issues are welcome!
 
 Feel free to check the issues page [here](https://github.com/Elbie-em/Ruby-Capstone-Project---Building-a-Custom-CSS-Linter/issues).
 
 ## Show your support
 
-Give me ⭐️ if you like this project!
+Give me a ⭐️ if you like this project!
 
 ## Acknowledgments
 
