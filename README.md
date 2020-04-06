@@ -5,11 +5,11 @@
 
  ## Objective
  CSS linter is responsible for flagging the following errors:
-  - *Space before opening brace error in css file*
-  - *Missing of an ending semicolon when defining a property and its value*
-  - *No space after a colon when defining a properties value*
-  - *Indentation errors*
-  - *White trailing space errors*
+  - *Space before opening brace error in css file.*
+  - *Missing of an ending semicolon when defining a property and its value.*
+  - *No space after a colon when defining a properties value.*
+  - *Indentation errors.*
+  - *White trailing space errors.*
 
  ## Built With
 
