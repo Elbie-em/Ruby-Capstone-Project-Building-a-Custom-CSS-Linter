@@ -1,6 +1,6 @@
-require 'spec_helper.rb'
-require'./lib/css_inspector.rb'
-require './lib/user_file.rb'
+require_relative 'spec_helper.rb'
+require_relative '../lib/css_inspector.rb'
+require_relative '../lib/user_file.rb'
 
 RSpec.describe CSSInspectorTool do
   let(:user_file) { UserFile.new('./files/stylesheet.css') }

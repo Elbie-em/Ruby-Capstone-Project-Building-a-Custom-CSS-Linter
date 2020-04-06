@@ -1,5 +1,5 @@
 require 'spec_helper.rb'
-require'./lib/user_file.rb'
+require_relative '../lib/user_file.rb'
 
 RSpec.describe UserFile do
   let(:user_file) { UserFile.new('./files/stylesheet.css') }
