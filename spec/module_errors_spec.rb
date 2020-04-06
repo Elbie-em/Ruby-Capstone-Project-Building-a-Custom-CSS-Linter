@@ -1,4 +1,3 @@
-require 'spec_helper.rb'
 require_relative '../lib/module_errors.rb'
 
 RSpec.describe Errors do

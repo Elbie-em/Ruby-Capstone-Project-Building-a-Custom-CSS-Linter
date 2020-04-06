@@ -1,4 +1,3 @@
-require 'spec_helper.rb'
 require_relative '../lib/user_file.rb'
 
 RSpec.describe UserFile do

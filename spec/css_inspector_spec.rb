@@ -1,4 +1,3 @@
-require_relative 'spec_helper.rb'
 require_relative '../lib/css_inspector.rb'
 require_relative '../lib/user_file.rb'
 
