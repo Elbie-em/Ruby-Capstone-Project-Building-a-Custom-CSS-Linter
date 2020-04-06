@@ -1,6 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
+gem 'colorize'
 gem 'rspec'
 gem 'rubocop'
-gem 'colorize'
 gem 'strscan'
